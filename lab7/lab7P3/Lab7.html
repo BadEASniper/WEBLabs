@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Lab7</title>
+    <link rel="stylesheet" href="Lab7.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#content').dblclick(function () {
+                $('.orangebg').removeClass('orangebg');
+                var word = window.getSelection();
+                if(!word == " "){
+                    var regex = new RegExp("\\b" + word, "gi");
+                    this.innerHTML = this.innerHTML.replace(regex, function (matched) {
+                            return "<span class=\"orangebg \">" + matched + "</span>";
+                    });
+                }
+            }); 
+        });
+    </script>
+</head>
+    <body>
+    <div class="text">
+        <div id="content">
+            Write a web page which contains some text. When the user selects a ana word from the web page ( by double clicking it a), all the occurrences of this word should be highlighted with a different background. 
+            <br><br>
+            Write a web page which contains some text. When the user selects a word from the web page ( by double clicking it ), all the occurrences of this word should be highlighted with a different background. 
+            <br><br>
+            Write a web page which contains some text. When the user selects a word from the web page ( by double clicking it ), all the occurrences of this word should be highlighted with a different background. 
+            <br><br>
+        </div>
+    </div>
+</body>
+</html> 
+

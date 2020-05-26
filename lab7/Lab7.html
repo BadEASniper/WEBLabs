@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<html>
+
+<head>
+    <title>Lab7</title>
+    <link rel="stylesheet" href="Lab7.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <script>
+        $(function () {
+
+            $("#div1").droppable({
+            drop: function (event, ui) {
+            const droppedItemID = ui.draggable.attr("id");
+            $("#div1").before($("#" + droppedItemID));
+            // alert(droppedItemID + ' IsDropped')
+            }
+            });
+            $("#div2").droppable({
+            drop: function (event, ui) {
+            $("#div2").before($("#" + ui.draggable.attr("id")));
+            }
+            });
+            $("#div3").droppable({
+            drop: function (event, ui) {
+            $("#div3").before($("#" + ui.draggable.attr("id")));
+            }
+            });
+            $("#div4").droppable({
+            drop: function (event, ui) {
+            $("#div4").before($("#" + ui.draggable.attr("id")));
+            }
+            });
+            $("#div5").droppable({
+            drop: function (event, ui) {
+            $("#div5").before($("#" + ui.draggable.attr("id")));
+            }
+            });
+            }
+            });
+            $("#outerDiv").ondragover = function (event) {
+            event.preventDefault();
+            this.className = 'myElem_dragover';
+            alert('item Is Dropped')
+            // $("#div5").before($("#" + ui.draggable.attr("id")));
+            }
+            $("#outerDiv")
+            .on("dragover", function myFunction() {
+            alert("Hello! I am an alert box!");
+            })
+    </script>
+
+
+    <!-- <script>
+    $(document).ready(function () {
+
+        // $("p").before("<p><b>Hello javatpoint.com</b></p>");
+        // $("#div4").before($("#div1"));
+
+        function dragover_handler(ev) {
+            ev.preventDefault();
+            ev.dataTransfer.dropEffect = "move";
+        }
+        function drop_handler(ev) {
+            // $("#div1").before($());
+            // $("#div4").before($("#" + ui.draggable.attr("id")));
+            // ev.preventDefault();
+
+            alert('aaaaaaa  #' + $(event.target.attr("id")))
+            // $("#div4").before($("#" + ui.draggable.attr("id")));
+
+        }
+        function div1_drop_handler(ev) {
+            alert('div 1111 handler')
+            $("#div1").before($("#" + event.target.attr("id")));
+        }
+    }); 
+</script> -->
+
+    <script>
+        // $("#p1").addEventListener("dragstart", function dragstart_handler(ev) { ev.dataTransfer.setData("text/plain", ev.target.id) });
+
+        // $("#div1").addEventListener("dragstart", function dragstart_handler(ev) { ev.dataTransfer.setData("text/plain", ev.target.id) });
+        // $("#div2").addEventListener("dragstart", function dragstart_handler(ev) { ev.dataTransfer.setData("text/plain", ev.target.id) });
+        // $("#div3").addEventListener("dragstart", function dragstart_handler(ev) { ev.dataTransfer.setData("text/plain", ev.target.id) });
+        // $("#div4").addEventListener("dragstart", function dragstart_handler(ev) { ev.dataTransfer.setData("text/plain", ev.target.id) });
+        // $("#div5").addEventListener("dragstart", function dragstart_handler(ev) { ev.dataTransfer.setData("text/plain", ev.target.id) });
+
+        // $("#div1").addEventListener("drop", function (event) {
+        //     event.preventDefault();
+        //     if (event.target.className == "parentdiv") {
+        //         document.getElementById("demo").style.color = "";
+        //         event.target.style.border = "";
+        //         var data = event.dataTransfer.getData("Text");
+        //         event.target.appendChild(document.getElementById(data));
+        //     }
+        // });
+
+
+        // $("#div5").addEventListener("dragleave", function (event) {
+        //     if (event.target.id == "droptarget") {
+        //         event.target.style.border = "";
+        //     }
+        // })
+        // $("#div5").addEventListener("dragstart", function dragstart_handler(ev) { ev.dataTransfer.setData("text/plain", ev.target.id) });
+
+
+        // $("html").on("dragover", function (event) {
+        //     event.preventDefault();
+        //     event.stopPropagation();
+        //     $(this).addClass('dragging');
+        // });
+
+        // $("html").on("dragleave", function (event) {
+        //     event.preventDefault();
+        //     event.stopPropagation();
+        //     $(this).removeClass('dragging');
+        // });
+
+        // $("html").on("drop", function (event) {
+        //     event.preventDefault();
+        //     event.stopPropagation();
+        //     alert("Dropped!");
+        // });
+        // $('.parentdiv')
+        //     // crucial for the 'drop' event to fire
+        //     .on('dragover', false)
+
+        //     .on('drop', function (e) {
+        //         alert("aAAAaaaaAAAAaa")
+        //         return false;
+        //     });
+
+    </script>
+
+</head>
+
+<body>
+    <!-- <p id="target" ondrop="drop_handler(event)" ondragover="dragover_handler(event)">Drop Zone</p>
+    <p id="p1" draggable="true">This element is draggable.</p> -->
+
+    <div id="sortable">
+        <div id="div1" class="parentdiv" draggable="true">DIV ONE</div>
+        <div id="div2" class="parentdiv" draggable="true">DIV TWO</div>
+        <div id="div3" class="parentdiv" draggable="true">DIV THREE</div>
+        <div id="div4" class="parentdiv" draggable="true">DIV FOUR</div>
+        <div id="div5" class="parentdiv" draggable="true">DIV FIVE</div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+Git init
+Git status
+Git add -A
+Git commit -m
+Git add remote URL
+git push origin master

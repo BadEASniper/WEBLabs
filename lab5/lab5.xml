@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="lab5Final.xsl" type="text/xsl"?>
+<cinema>
+	<movie>
+		<title>Shutter Island</title>
+		<actors>Leonardo DiCaprio, Emily Mortimer, Mark Ruffalo </actors>
+		<genre>Mistery</genre>
+		<date>06/04/2020</date>
+		<duration>2h 19 min</duration>
+	</movie>
+	<movie>
+		<title>The Butterfly Effect </title>
+		<actors>Ashton Kutcher, Amy Smart, Melora Walters </actors>
+		<genre>Sci-Fi</genre>
+		<date>06/04/2020</date>
+		<duration>1h 53min </duration>
+	</movie>
+	<movie>
+		<title>Inception</title>
+		<actors>Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page</actors>
+		<genre>Action</genre>
+		<date>06/04/2020</date>
+		<duration>2h 28min </duration>
+	</movie>
+	<movie>
+		<title>Secret Window</title>
+		<actors>Johnny Depp, Maria Bello, John Turturro </actors>
+		<genre>Mistery</genre>
+		<date>06/04/2020</date>
+		<duration>1h 36min </duration>
+	</movie>
+	<movie>
+		<title>Secret Window</title>
+		<actors>Johnny Depp, Maria Bello, John Turturro </actors>
+		<genre>Mistery</genre>
+		<date>20/04/2020</date>
+		<duration>1h 36min </duration>
+	</movie>
+</cinema>

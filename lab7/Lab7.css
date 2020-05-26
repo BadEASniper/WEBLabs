@@ -1,0 +1,19 @@
+.parentdiv{
+  cursor:move;
+  min-height: 100px;
+}
+#div1 {
+  background-color: rgb(111, 233, 11);
+}
+#div2 {
+  background-color: rgb(55, 173, 252);
+}
+#div3 {
+  background-color: rgb(156, 156, 78);
+}
+#div4 {
+  background-color: rgb(0, 128, 85);
+}
+#div5 {
+  background-color: rgb(226, 125, 43);
+}

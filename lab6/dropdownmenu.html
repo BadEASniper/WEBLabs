@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="dropdownmenu.css">
+</head>
+
+<body>
+    <h2>My Dropdown Menu</h2>
+    <div>
+        <button id=menuButton class="menu-button">Menu</button>
+        <div id="myDropdown" class="mainmenu-dropdown-content">
+            <button id=submenuButton1 class="menu-button">Submenu1</button>
+            <div id="mySubDropdown1" class="dropdown-content">
+                <a href="#item1">Item1-Submenu1</a>
+                <a href="#item2">Item2-Submenu1</a>
+                <a href="#item3">Item3-Submenu1</a>
+                <a href="#item4">Item4-Submenu1</a>
+                <a href="#item5">Item5-Submenu1</a>
+            </div>
+            <button id=submenuButton2 class="menu-button">Submenu2</button>
+            <div id="mySubDropdown2" class="dropdown-content">
+                <a href="#item1">Item1-Submenu2</a>
+                <a href="#item2">Item2-Submenu2</a>
+                <a href="#item3">Item3-Submenu2</a>
+                <a href="#item4">Item4-Submenu2</a>
+                <a href="#item5">Item5-Submenu2</a>
+            </div>
+            <button id=submenuButton3 class="menu-button">Submenu3</button>
+            <div id="mySubDropdown3" class="dropdown-content">
+                <a href="#item1">Item1-Submenu3</a>
+                <a href="#item2">Item2-Submenu3</a>
+                <a href="#item3">Item3-Submenu3</a>
+                <a href="#item4">Item4-Submenu3</a>
+                <a href="#item5">Item5-Submenu3</a>
+            </div>
+            <button id=submenuButton4 class="menu-button">Submenu4</button>
+            <div id="mySubDropdown4" class="dropdown-content">
+                <a href="#item1">Item1-Submenu4</a>
+                <a href="#item2">Item2-Submenu4</a>
+                <a href="#item3">Item3-Submenu4</a>
+                <a href="#item4">Item4-Submenu4</a>
+                <a href="#item5">Item5-Submenu4</a>
+            </div>
+            <button id=submenuButton5 class="menu-button">Submenu5</button>
+            <div id="mySubDropdown5" class="dropdown-content">
+                <a href="#item1">Item1-Submenu5</a>
+                <a href="#item2">Item2-Submenu5</a>
+                <a href="#item3">Item3-Submenu5</a>
+                <a href="#item4">Item4-Submenu5</a>
+                <a href="#item5">Item5-Submenu5</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function function1() { showSubMenu('mySubDropdown1'); } 
+        function function2() { showSubMenu('mySubDropdown2'); } 
+        function function3() { showSubMenu('mySubDropdown3'); } 
+        function function4() { showSubMenu('mySubDropdown4'); } 
+        function function5() { showSubMenu('mySubDropdown5'); } 
+        document.getElementById("menuButton").addEventListener("click", showMenu);
+        document.getElementById("submenuButton1").addEventListener("click", function1);
+        document.getElementById("submenuButton2").addEventListener("click", function2);
+        document.getElementById("submenuButton3").addEventListener("click", function3);
+        document.getElementById("submenuButton4").addEventListener("click", function4);
+        document.getElementById("submenuButton5").addEventListener("click", function5);
+        function showSubMenu(divID) {
+            // la al doilea click pe submenu continulul dispare
+            if (document.getElementById(divID).style.display == "block") {
+                document.getElementById("mySubDropdown1").style.display = "none";
+                document.getElementById("mySubDropdown2").style.display = "none";
+                document.getElementById("mySubDropdown3").style.display = "none";
+                document.getElementById("mySubDropdown4").style.display = "none";
+                document.getElementById("mySubDropdown5").style.display = "none";
+            }
+            // altfel la primul click pe submenu inchide toate celalate submenu-uri si deschide cel apasat
+            else {
+                document.getElementById("mySubDropdown1").style.display = "none";
+                document.getElementById("mySubDropdown2").style.display = "none";
+                document.getElementById("mySubDropdown3").style.display = "none";
+                document.getElementById("mySubDropdown4").style.display = "none";
+                document.getElementById("mySubDropdown5").style.display = "none";
+                document.getElementById(divID).style.display = "block";
+            }
+        }
+
+        function showMenu() {
+            document.getElementById("myDropdown").classList.toggle("show");
+
+        }
+
+    </script>
+</body>
+
+</html>

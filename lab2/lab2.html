@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab2</title>
+    <meta charset="UTF-8">
+</head>
+
+<!-- <body bgcolor="#99ccff"> -->
+<body>
+
+    <h1>Welcome to my website<br><br><br></h1>
+
+    <h2>My interests</h2>
+    <ul>
+        <li>The future of Machine Learning</li>
+        <li>AI safety reasearch and the development of AGI
+            <a href="http://alignment-newsletter.libsyn.com/" target="_blank">(Check out this cool podcast about AI
+                safety)</a>
+        </li>
+        <li>Climate change effects on the environment</li>
+        <li>The impact of virtual reality and augmented reality on
+            <ul>
+                <li>Medicine</li>
+                <li>Engineering</li>
+                <li>Education</li>
+                <li>Social life</li>
+            </ul>
+        </li>
+    </ul>
+    <h2>Hobbies</h2>
+    <ol start="10">
+        <li>Programming</li>
+        <li>Traveling</li>
+        <li>Gaming</li>
+        <li>Arts</li>
+        <li>Music</li>
+    </ol>
+    <h2>Places in the world that I want to visit</h2>
+    <ol>
+        <li>USA <ul>
+        <li>Los Angeles</li>
+        <li>New York</li>
+        <li>Washington</li>
+            </ul>
+        </li>
+        <li>Netherlands: Amsterdam</li>
+        <li>Czech Republic: Prague</li>
+        <li>Italy: Rome</li>
+        <li>Canada: Ottawa</li>
+    </ol>
+
+
+    <!-- <div style="background-color:lightblue" align="center"> -->
+    <div>
+        <h2><br><br><br>My Spray Paint Art<br><br></h2>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Painting</th>
+            </tr>
+            <tr>
+                <td>Fusion</td>
+                <td><img src="painting1.png" alt="painting1"></td>
+                <!-- <td valign="top"><img src="painting1.png" alt="painting1"></!-->
+            </tr>
+            <tr>
+                <td>In Love</td>
+                <td><img src="painting5.png" alt="painting5"></td>
+            </tr>
+            <tr>
+                <td>Moonshine</td>
+                <td><img src="painting2.png" alt="painting2"></td>
+            </tr>
+            <tr>
+                <td>Snowy Mountains</td>
+                <td><img src="painting3.png" alt="painting3"></td>
+            </tr>
+            <tr>
+                <td>Lone Wolf</td>
+                <td><img src="painting4.png" alt="painting4"></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+    <h3>Services</h3>
+    <form>
+
+        <fieldset>
+
+            <fieldset>
+                <legend>Type in your contact information here</legend>
+                Frist Name<br><input type="text" size="50"><br><br>
+                Last Name<br><input type="text" size="50"><br><br>
+                Email<br><input type="email" multiple><br>
+
+                <input type="checkbox" checked="">subscribe to weekly newsletter
+                <br><br>
+                Phone number<br><input type="text" size="50" maxlength="12">
+            </fieldset>
+
+            <!-- <input type="radio" name="cod" value="use_cnp" checked=""><br><br> -->
+
+            <fieldset>
+                <legend>Order your own custom made painting here</legend>
+
+                <h4>What should your painting express?</h4>
+                <textarea rows="6" cols="50"></textarea><br><br>
+                <h4>Which painting should it resemble to the most?</h4>
+                <!-- <select    =""> -->
+                    <select>
+
+                    <option value="fusion">Fusion</option>
+
+                    <option value="inLove">In Love</option>
+
+                    <option value="moonshine">Moonshine</option>
+
+                    <option value="snowyMountains">Snowy Mountains</option>
+
+                    <option value="loneWolf" selected="">Lone Wolf</option>
+
+                </select><br>
+
+
+                <h4>Select a predominant color</h4>
+                <select>
+                <!-- <select enebled=""> -->
+                    <option value="purple">Purple</option>
+                    <option value="red">Red</option>
+                    <option value="orange">Orange</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+
+                </select><br>
+                <h4>Select a theme</h4>
+
+                <!-- <input type="radio" name="dark" value="dark">
+            <input type="radio" name="light" value="light" checked=""> -->
+
+                <input type="radio" id="dark" name="theme" value="dark">
+                <label for="dark">Dark</label><br>
+                <input type="radio" id="light" name="theme" value="light">
+                <label for="light">Light</label><br>
+
+                <h4>Select the orientation of the painting</h4>
+                <input type="radio" id="landscape" name="orientation" value="landscape">
+                <label for="landscape">Landscape</label><br>
+                <input type="radio" id="portrait" name="orientation" value="portrait">
+                <label for="portrait">Portrait</label><br>
+
+                <h4>Select extras</h4>
+                <input type="radio" id="sun" name="extras" value="sun">
+                <label for="sun">Sun</label><br>
+                <input type="radio" id="moon" name="extras" value="moon">
+                <label for="moon">Moon</label><br>
+                <input type="radio" id="none" name="extras" value="none">
+                <label for="none">None</label><br>
+                <h4>How many planets would you like there to be in your painting?</h4>
+                <input type="text" size="50"><br>
+                <h4>Pricing</h4>
+                    <ol>
+                        <li>A1 - 40 $</li>
+                        <li>A2 - 30 $</li>
+                        <li>A3 - 20 $</li>
+                        <li>A4 - 10 $</li>
+                    </ol>
+                <h4>Select the paper size</h4>
+                <input type="radio" id="a1" name="theme" value="a1">
+                <label for="a1">A1</label><br>
+                <input type="radio" id="a2" name="theme" value="a2">
+                <label for="a2">A2</label><br>
+                <input type="radio" id="a3" name="theme" value="a3">
+                <label for="a3">A3</label><br>
+                <input type="radio" id="a4" name="theme" value="a4">
+                <label for="a4">A4</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Shipping details</legend>
+                Country<br><input type="text" size="50" value="Romania" readonly><br><br>
+                City<br><input type="text" size="50"><br><br>
+                Adress<br><input type="text" size="50"><br><br>
+                Zip code<br><input type="text" size="50"><br><br>
+                Apartament<br><input type="text" size="50" disabled><br><br>
+
+            </fieldset>
+            <p>By accessing our Services, you represent that you have all necessary authority, permissions, and
+                approvals to connect each of the websites that you connect with the Services, and register for and use
+                the Services, including without limitation,<span style="color:red;font-weight:bold">providing and
+                    enabling ShieldSquare to collect all the information submitted or made available by you and the end
+                    users</span> , customers, or other users or visitors to a Site in connection with the Services. </p>
+
+            <input type="checkbox" id="datasafety" name="datasafety" value="accepted">
+            <label for="datasafety"> I have a read the data safety terms and conditions</label><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <h5>If I'm not answering to your calls, you can check my schedule here</h5>
+    <!-- <table border="full"> -->
+    <h4>Schedule </h4>
+        <table>
+        <tr>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <th>Busy</th>
+                        <th>Free</th>
+                    </tr>
+                    <tr>
+                        <td>00 - 08</td>
+                        <td>8 - 12</td>
+                    </tr>
+                    <tr>
+                        <td>12 - 16</td>
+                        <td>16 - 20</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <th>Busy</th>
+                        <th>Free</th>
+                    </tr>
+                    <tr>
+                        <td>00 - 08</td>
+                        <td>8 - 12</td>
+                    </tr>
+                    <tr>
+                        <td>12 - 16</td>
+                        <td>16 - 20</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <th>Busy</th>
+                        <th>Free</th>
+                    </tr>
+                    <tr>
+                        <td>00 - 08</td>
+                        <td>8 - 12</td>
+                    </tr>
+                    <tr>
+                        <td>12 - 16</td>
+                        <td>16 - 20</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <th>Busy</th>
+                        <th>Free</th>
+                    </tr>
+                    <tr>
+                        <td>00 - 08</td>
+                        <td>8 - 12</td>
+                    </tr>
+                    <tr>
+                        <td>12 - 16</td>
+                        <td>16 - 20</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <th>Busy</th>
+                        <th>Free</th>
+                    </tr>
+                    <tr>
+                        <td>00 - 08</td>
+                        <td>8 - 12</td>
+                    </tr>
+                    <tr>
+                        <td>12 - 16</td>
+                        <td>16 - 20</td>
+                    </tr>
+                </table>
+            </td>
+
+
+
+        </tr>
+
+
+    </table>
+    <h4>Contact info </h4>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Phone nr.</th>
+                <th>E-mail</th>
+                <th>Name</th>
+                <th>Service</th>
+                <th>Skill level</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td >0123412341</td>
+                <td>myemail1@m  ail.com</td>
+                <td>Patrick</td>
+                <td rowspan="2">
+                    <table>
+                        <tr>
+                            <th>Experience</th>
+                        </tr>
+                        <tr>
+                            <td>ML - 1 year</td>
+                        </tr>
+                        <tr>
+                            <td>Web - 1 year</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Advanced</td>
+
+            </tr>
+            <tr><td>Empty</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            </tr>
+
+            <tr>
+                <td>0432147777</td>
+                <td>myemail2@mail.com</td>
+                <td  colspan="2">Badea</td>
+                <td >Paint</td>
+
+            </tr>
+
+        </tbody>
+    </table>
+    <br><br>
+
+    <div>
+        <p style="float: left;"><img src="goatCut.png" alt="goat jumping heroically" height="200" width="300">
+            <h2>Have a nice! (Aveţi o zi bună)</h2>
+    </div>
+    <!-- ca sa nu mai scrie si personal interests la dreapta -->
+    <!-- <div style="clear: left;">
+    </div> -->
+
+</html>
